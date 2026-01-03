@@ -38,6 +38,8 @@ img {
     max-width: 1200px;
     width: 100%; 
     margin-inline: auto; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Text */
