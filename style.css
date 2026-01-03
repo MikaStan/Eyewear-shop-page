@@ -1,0 +1,244 @@
+/* https://pixso.net/app/editor/Ue-TsUnrof6GfSqFzUojZA  */
+
+/* General */
+:root {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    width: 100%; 
+    margin-inline: auto; 
+}
+
+/* Text */
+.break__text {
+    display: block;
+}
+
+.header__slogan,
+.shop__title,
+.shop__text,
+.gallery__text {
+    text-transform: uppercase;
+}
+
+/* Header */
+header {
+    margin-bottom: 156px;
+}
+
+.header__container {
+    position: relative;
+}
+
+.header__slogan {
+    position: absolute;
+    width: 142px;
+    height: 60px;
+    left: 900px;
+    top: 284px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: normal;
+    letter-spacing: 2.25px;
+    text-align: left;
+}
+
+/* Shop */
+.shop {
+    margin-bottom: 90px;
+}
+
+.shop__title {
+    font-size: 30px;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 168px;
+}
+
+.shop__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.shop__img {
+    margin-bottom: 16px;
+}
+
+.shop__text,
+.gallery__text {
+    font-size: 18px;
+    line-height: 16.2px;
+    text-align: center;
+}
+
+/* Gallery */
+.gallery {
+    margin-bottom: 104px;
+}
+
+.gallery__cards {
+    display: grid;
+    grid-template-areas: 
+    "icons icons"
+    "buy book"; 
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#icons {
+    grid-area: icons;
+}
+#buy {
+    grid-area: buy;
+}
+#book {
+    grid-area: book;
+}
+
+#icons .gallery__text {
+    padding-top: 72px;
+    padding-bottom: 82px;
+}
+
+#buy .gallery__img,
+#book .gallery__img {
+    margin-bottom: 24px;
+}
+
+/* Footer */
+footer {
+    margin-bottom: 20px;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer__item {
+    max-width: 168px;
+}
+
+.footer__item-head,
+.footer__item-text,
+.footer__item-text a,
+.footer-icon-text {
+    font-family: Open Sans;
+    text-align: left;
+}
+
+.footer__item-head {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.footer__item-text {
+    line-height: 24px;
+}
+
+.footer__item-text,
+.footer__item-text a {
+    color: #939292;
+    font-size: 13px;
+}
+
+.footer__item_links {
+    display: flex;
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.footer-icon-text {
+    color: #939292;
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+/* MEDIA */
+@media (max-width: 1024px) {
+    .header__slogan {
+        left: 75%;
+        top: 48.73%;
+    }
+}
+
+@media (max-width: 540px) {
+    header {
+    margin-bottom: 60px;
+    }
+    .header__slogan {
+        left: 64%;
+    }
+    .shop__title {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 380px) {
+    .header__slogan {
+        left: 60%;
+        font-size: 10px;
+    }
+    .break__text-header {
+        display: block;
+    }
+    .gallery__cards {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .gallery__item {
+        padding: 0 20px; /* выравнивает карточки Gallery по центру и делает их ширину близкой к ширине карточек Shop */
+    }
+    #icons .gallery__text {
+        padding: 0;
+    }
+    #icons .gallery__img {
+    margin-bottom: 24px;
+    }
+    .footer__contacts {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+    .footer__item_links {
+        justify-content: center;
+    }
+    .footer__item-head,
+    .footer__item-text,
+    .footer-icon {
+        text-align: center;
+    }
+}
