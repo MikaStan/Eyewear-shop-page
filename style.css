@@ -30,6 +30,7 @@ h1, h2, h3, p {
 
 img {
     width: 100%;
+    height: auto;
 }
 
 /* Container */
@@ -37,6 +38,8 @@ img {
     max-width: 1200px;
     width: 100%; 
     margin-inline: auto; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Text */
